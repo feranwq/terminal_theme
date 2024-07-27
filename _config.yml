@@ -56,6 +56,24 @@ terminal:
     
 # disqus: NekoDaemon
 utterances: Tonny-Gu/blog_comments
+footer:
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
+  beian:
+    enable: true
+    icp: 浙ICP备 1902xxx
+    # The digit in the num of gongan beian.
+    gongan_id: 330xxx
+    # The full num of gongan beian.
+    gongan_num: 浙公网安备 330118xxx
+    # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
+    gongan_icon_url: img/gonganico.png
+
+search:
+  enable: true
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 license:
   name: CC-BY-SA 4.0
@@ -84,7 +102,7 @@ third_party:
   js:
     jquery: /js/third-party/jquery.min.js
     velocity: /js/third-party/velocity.min.js 
-    velocity-ui: /js/third-party/velocity.ui.min.js 
+    velocity-ui: /js/third-party/velocity.ui.min.js
   css:
     # font-awsome: https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
     font-awsome: https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css

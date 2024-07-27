@@ -4,8 +4,20 @@
       each url, name in theme.social
         a.social-icon(href=url target="_blank")
           i.fa(class='fa-'+name)
+
+  if theme.footer.beian.enable
+    .beian
+      a(href="https://beian.miit.gov.cn") #{theme.footer.beian.icp}
+      if theme.footer.beian.gongan_icon_url
+        |  |  
+        img(src=url_for(theme.footer.beian.gongan_icon_url) alt="")
+      if theme.footer.beian.gongan_id
+        if theme.footer.beian.gongan_num
+          a(href="https://beian.mps.gov.cn/#/query/webSearch?code=" + theme.footer.beian.gongan_id) #{theme.footer.beian.gongan_num}
+
   p.design-info
     | Powered by #[a(href="https://hexo.io" target="_blank") Hexo] | Theme #[a(href="https://github.com/lazysheep666/terminal_theme" target="_blank") Teminal] (#[a(href="https://github.com/Tonny-Gu/terminal_theme" target="_blank") NekoDaemon Remix])
+
   p.design-info
     a(href=theme.license.url target="_blank")= theme.license.name
     | 
