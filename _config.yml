@@ -55,7 +55,7 @@ terminal:
     laekov: https://laekov.com.cn
     
 # disqus: NekoDaemon
-utterances: Tonny-Gu/blog_comments
+# utterances: Tonny-Gu/blog_comments
 footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
@@ -67,13 +67,6 @@ footer:
     gongan_num: 浙公网安备 330118xxx
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: img/gonganico.png
-
-search:
-  enable: true
-  path: search.xml
-  field: post
-  content: true
-  format: html
 
 license:
   name: CC-BY-SA 4.0
